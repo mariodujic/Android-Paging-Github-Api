@@ -10,7 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import com.groundzero.github.R
-import com.groundzero.github.core.activity.RemoteBaseFragment
+import com.groundzero.github.core.RemoteBaseFragment
 import com.groundzero.github.data.remote.Github
 import com.groundzero.github.data.response.Status
 import kotlinx.android.synthetic.main.fragment_list.*

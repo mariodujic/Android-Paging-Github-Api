@@ -9,7 +9,7 @@ import android.widget.ProgressBar
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.groundzero.github.R
-import com.groundzero.github.core.activity.RemoteBaseFragment
+import com.groundzero.github.core.RemoteBaseFragment
 import kotlinx.android.synthetic.main.fragment_repo.*
 
 

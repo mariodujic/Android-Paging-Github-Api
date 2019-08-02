@@ -1,4 +1,4 @@
-package com.groundzero.github.core.activity
+package com.groundzero.github.core
 
 import android.os.Bundle
 import android.view.View

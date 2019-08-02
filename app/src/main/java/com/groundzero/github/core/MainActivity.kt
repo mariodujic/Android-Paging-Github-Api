@@ -1,4 +1,4 @@
-package com.groundzero.github.core.activity
+package com.groundzero.github.core
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
