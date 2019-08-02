@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/normal_padding">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/name"
+              android:textSize="@dimen/title"
+              android:textColor="@color/colorPrimaryDark"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/full_name"
+              android:textSize="@dimen/subtitle"
+              android:textColor="@color/colorPrimary"/>
+</LinearLayout>

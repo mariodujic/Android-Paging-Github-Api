@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.single.RepoFragment">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/size"
+            android:padding="@dimen/normal_padding"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stargazers_count"
+            android:padding="@dimen/normal_padding"
+            app:layout_constraintTop_toBottomOf="@+id/size"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/forks_count"
+            android:padding="@dimen/normal_padding"
+            app:layout_constraintTop_toBottomOf="@+id/stargazers_count"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contributors_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/normal_padding"
+            app:layout_constraintTop_toBottomOf="@id/forks_count"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <include
+            layout="@layout/external_progress_bar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/repo_progress_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
