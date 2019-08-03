@@ -10,7 +10,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.groundzero.github"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -41,9 +41,13 @@ dependencies {
     /*Tests*/
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     testImplementation 'org.mockito:mockito-core:2.23.0'
     testImplementation "android.arch.core:core-testing:1.1.1"
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+    androidTestImplementation 'com.squareup.okhttp:mockwebserver:2.7.2'
     /*LiveData*/
     implementation "androidx.lifecycle:lifecycle-extensions:2.2.0-alpha02"
     implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'

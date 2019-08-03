@@ -6,6 +6,7 @@ import android.widget.ProgressBar
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.groundzero.github.data.local.LocalInstance
 import com.groundzero.github.data.local.LocalRepository
 import com.groundzero.github.data.remote.GithubDatabase
 import com.groundzero.github.data.remote.GithubRepository
@@ -18,12 +19,14 @@ open class RemoteBaseFragment : Fragment() {
     private val githubRepository = GithubRepository(githubDatabase)
     // Local repository used to cache item name and item owner name
     // before remotely fetching more details about the item
+    private lateinit var localInstance: LocalInstance
     protected lateinit var localRepository: LocalRepository
     protected lateinit var viewModelFactory: ViewModelFactory
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        localRepository = LocalRepository(context!!)
+        localInstance = LocalInstance(context!!)
+        localRepository = LocalRepository(localInstance)
         viewModelFactory = ViewModelFactory(githubRepository, localRepository)
     }
 
