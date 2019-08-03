@@ -16,9 +16,7 @@ class LocalRepositoryTest {
     @Test
     fun set_shared_preference_data_true() {
         localRepository.setData(LOCAL_USERNAME_KEY, USERNAME).apply()
-        assertEquals(localRepository.getData(LOCAL_USERNAME_KEY),
-            USERNAME
-        )
+        assertEquals(localRepository.getData(LOCAL_USERNAME_KEY), USERNAME)
     }
 
     companion object {
