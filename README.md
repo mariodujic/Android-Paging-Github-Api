@@ -11,7 +11,6 @@ Android paging example. Github v3 Api used.
 * Kotlin
 
 ## Libraries
-* RxJava
 * Retrofit
 * LiveData
 * PagedListAdapter
